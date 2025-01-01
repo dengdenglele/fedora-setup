@@ -89,18 +89,18 @@ RPM fusion repositories are a mandatory requirement
 ```bash
 # verify current state
 sudo dnf install vainfo
-vainfo
+vainfo > ~/vainfo-before-intel-driver-installation.md
 
 # install
-sudo dnf install ffmpeg-free
-sudo dnf install libavcodec-freeworld
-sudo dnf install intel-media-driver
+sudo dnf install ffmpeg-free ### From repository : anaconda
+sudo dnf install libavcodec-freeworld ### From repository : rpmfusion-free
+sudo dnf install intel-media-driver ### From repository : rpmfusion-nonfree
 
 # for older Intel GPUs use libva-intel-driver
-# sudo dnf install libva-intel-driver
+# sudo dnf install libva-intel-driver ### Repository : rpmfusion-free
 
 # verify again
-vainfo
+vainfo > ~/vainfo-after-intel-driver-installation.md
 ```
 
 - [Configure VA-API Video decoding on Intel](https://fedoraproject.org/wiki/Firefox_Hardware_acceleration#Configure_VA-API_Video_decoding_on_Intel)
