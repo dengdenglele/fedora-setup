@@ -80,3 +80,14 @@ https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -
 
 - [Enabling the RPM Fusion repositories](https://docs.fedoraproject.org/en-US/quick-docs/rpmfusion-setup/)
 - [Installing Free and Nonfree Repositories](https://rpmfusion.org/Configuration)
+- [Verify RMP Fusion keys](https://rpmfusion.org/keys)
+
+## Add multimedia plugins
+
+```bash
+# only for Fedora 41 and newer
+sudo dnf group install multimedia
+```
+
+- [Installing plugins for playing movies and music](https://docs.fedoraproject.org/en-US/quick-docs/installing-plugins-for-playing-movies-and-music/)
+
