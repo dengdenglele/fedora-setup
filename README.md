@@ -52,6 +52,7 @@ user@fedora:~$ sudo dnf install signal-desktop
 
 - [Accurate way to install signal in fedora](https://discussion.fedoraproject.org/t/accurate-way-to-install-signal-in-fedora/117236)
 - [Does anyone know what's up with Signal on Fedora currently?](https://www.reddit.com/r/Fedora/comments/1fsrzyi/does_anyone_know_whats_up_with_signal_on_fedora/)
+- [Signal under fire for storing encryption keys in plaintext](https://news.ycombinator.com/item?id=40898353)
 
 ## Different flatpak remotes available for OBS Studio installation
 There are two flatpak remotes available for OBS installation ('fedora' and 'flathub')
