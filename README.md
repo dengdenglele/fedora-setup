@@ -52,3 +52,17 @@ user@fedora:~$ sudo dnf install signal-desktop
 
 - [Accurate way to install signal in fedora](https://discussion.fedoraproject.org/t/accurate-way-to-install-signal-in-fedora/117236)
 - [Does anyone know what's up with Signal on Fedora currently?](https://www.reddit.com/r/Fedora/comments/1fsrzyi/does_anyone_know_whats_up_with_signal_on_fedora/)
+
+## Different flatpak remotes available for OBS Studio installation
+There are two flatpak remotes available for OBS installation ('fedora' and 'flatpak')
+
+Main differences:
+- 'fedora'
+  - Newest version
+  - Does not install additional packages for hardware encoding, only OpenH264 available as software encoder
+  - hardware encoding one might be fixed/added with rpm packages?
+- 'flatpak'
+  - slightly older version
+  - ships with relevant packages for hardware encoding
+  - HEVC and H.264 can be selected with harddware acceleration e.g. Intel Quick Sync
+  - Hardware acceleration can be observed with intel_gpu_top
