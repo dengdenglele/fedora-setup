@@ -60,9 +60,9 @@ Main differences:
 - 'fedora'
   - Newest version
   - Does not install additional packages for hardware encoding, only OpenH264 available as software encoder
-  - hardware encoding one might be fixed/added with rpm packages?
+  - Hardware encoding might be fixed/added with addition of rpm packages?
 - 'flatpak'
-  - slightly older version
-  - ships with relevant packages for hardware encoding
+  - Slightly older version
+  - Ships with relevant packages for hardware encoding
   - HEVC and H.264 can be selected with harddware acceleration e.g. Intel Quick Sync
   - Hardware acceleration can be observed with intel_gpu_top
