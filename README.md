@@ -14,7 +14,7 @@ wipefs -a /dev/sdX
   - Be careful when setting passphrase for encryption blindly
 - Select third party software after first reboot after installation
 - First tutorial after finishing user and passord is about GNOME features (overview explanation, touchpad swiping)
-
+- Also add rpm fusion packages
 ## Update BIOS (and other firmware) with terminal
 
 ```bash
@@ -66,3 +66,17 @@ Main differences:
   - Ships with relevant packages for hardware encoding
   - HEVC and H.264 can be selected with harddware acceleration e.g. Intel Quick Sync
   - Hardware acceleration can be observed with intel_gpu_top
+ 
+## Add free and nonfree RPM fusion repositories
+
+```bash
+# enable rpm fusion free repository
+sudo dnf install \
+https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+# enable rpm fusion nonfree repository
+sudo dnf install \
+https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+```
+
+- [Enabling the RPM Fusion repositories](https://docs.fedoraproject.org/en-US/quick-docs/rpmfusion-setup/)
+- [Installing Free and Nonfree Repositories](https://rpmfusion.org/Configuration)
