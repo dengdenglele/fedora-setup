@@ -101,6 +101,10 @@ sudo dnf install intel-media-driver ### From repository : rpmfusion-nonfree
 
 # verify again
 vainfo > ~/vainfo-after-intel-driver-installation.md
+
+# verify with intel-gpu-tools
+sudo dnf igt-gpu-tools
+sudo intel_gpu_top
 ```
 
 - [Configure VA-API Video decoding on Intel](https://fedoraproject.org/wiki/Firefox_Hardware_acceleration#Configure_VA-API_Video_decoding_on_Intel)
