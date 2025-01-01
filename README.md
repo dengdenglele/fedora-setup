@@ -82,6 +82,30 @@ https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -
 - [Installing Free and Nonfree Repositories](https://rpmfusion.org/Configuration)
 - [Verify RMP Fusion keys](https://rpmfusion.org/keys)
 
+## Enable hardware acceleration on Intel hardware
+
+RPM fusion repositories are a mandatory requirement
+
+```bash
+# verify current state
+sudo dnf install vainfo
+vainfo
+
+# install
+sudo dnf install ffmpeg-free
+sudo dnf install libavcodec-freeworld
+sudo dnf install intel-media-driver
+
+# for older Intel GPUs use libva-intel-driver
+# sudo dnf install libva-intel-driver
+
+# verify again
+vainfo
+```
+
+- [Configure VA-API Video decoding on Intel](https://fedoraproject.org/wiki/Firefox_Hardware_acceleration#Configure_VA-API_Video_decoding_on_Intel)
+- [Arch Wiki: Hardware video acceleration](https://wiki.archlinux.org/title/Hardware_video_acceleration)
+
 ## Add multimedia plugins
 
 ```bash
