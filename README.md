@@ -4,6 +4,9 @@ let's start rolling with fedora
 ## Delete all partitions on a drive during live session with terminal
 ```bash
 wipefs -a /dev/sdX
+
+# if device is mounted, unmount it
+umount /dev/sda1
 ```
 - [Deleting All Partitions From the Command Line](https://serverfault.com/questions/250839/deleting-all-partitions-from-the-command-line)
 
