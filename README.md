@@ -128,7 +128,7 @@ sudo dnf group install multimedia
 ```
 mkdir ~/.config/foot
 cp /etc/xdg/foot/foot.ini ~/.config/foot
-echo "font=monospace:size=12" >> ~/.config/foot/foot.ini
+sed -i '/# font=monospace:size=8/a font=monospace:size=12' ~/.config/foot/foot.ini
 ```
 
 - [Increase font size in terminal (sway)](https://forum.manjaro.org/t/increase-font-size-in-terminal/125392)
