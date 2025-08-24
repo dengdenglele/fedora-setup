@@ -123,3 +123,12 @@ sudo dnf group install multimedia
 
 - [Installing plugins for playing movies and music](https://docs.fedoraproject.org/en-US/quick-docs/installing-plugins-for-playing-movies-and-music/)
 - Inside "Software" App > "Explore" > go to bottom to "Other Categories > Codecs" to view all currently installed codecs
+
+## Increase font size in foot terminal emulator
+```
+mkdir ~/.config/foot
+cp /etc/xdg/foot/foot.ini ~/.config/foot
+echo "font=monospace:size=12" >> ~/.config/foot/foot.ini
+```
+
+- [Increase font size in terminal (sway)](https://forum.manjaro.org/t/increase-font-size-in-terminal/125392)
