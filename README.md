@@ -107,7 +107,7 @@ sudo dnf install intel-media-driver ### From repository : rpmfusion-nonfree
 vainfo > ~/vainfo-after-intel-driver-installation.md
 
 # verify with intel-gpu-tools
-sudo dnf igt-gpu-tools
+sudo dnf install igt-gpu-tools
 sudo intel_gpu_top
 ```
 
