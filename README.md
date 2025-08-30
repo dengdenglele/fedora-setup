@@ -132,3 +132,12 @@ sed -i '/# font=monospace:size=8/a font=monospace:size=12' ~/.config/foot/foot.i
 ```
 
 - [Increase font size in terminal (sway)](https://forum.manjaro.org/t/increase-font-size-in-terminal/125392)
+
+## Add GNOME to Fedora spin (e.g. Fedora sway)
+```
+sudo dnf update
+sudo dnf install @gnome-desktop
+sudo reboot
+```
+
+- [How to Install and Switch Desktop Environments in Fedora](https://www.tecmint.com/install-and-switch-desktop-environments-in-fedora/)
